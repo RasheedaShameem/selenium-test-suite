@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="17" passed="17" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-04T19:38:10 EDT" name="Suite" finished-at="2025-04-04T19:38:59 EDT" duration-ms="48303">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@e25951c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+      <group name="Errorhandling">
+        <method signature="Errorvalidation.InvalidLogin()[pri:0, instance:tests.Errorvalidation@68878f6d]" name="InvalidLogin" class="tests.Errorvalidation"/>
+        <method signature="Errorvalidation.checkoutWithMissingFirstName(java.util.HashMap)[pri:0, instance:tests.Errorvalidation@68878f6d]" name="checkoutWithMissingFirstName" class="tests.Errorvalidation"/>
+        <method signature="Errorvalidation.lockedUser()[pri:0, instance:tests.Errorvalidation@68878f6d]" name="lockedUser" class="tests.Errorvalidation"/>
+        <method signature="Errorvalidation.performanceGlitch()[pri:0, instance:tests.Errorvalidation@68878f6d]" name="performanceGlitch" class="tests.Errorvalidation"/>
+      </group> <!-- Errorhandling -->
+      <group name="E2ETest">
+        <method signature="E2ETest.submitOrder(java.util.HashMap)[pri:0, instance:tests.E2ETest@7dfb0c0f]" name="submitOrder" class="tests.E2ETest"/>
+      </group> <!-- E2ETest -->
+    </groups>
+    <test started-at="2025-04-04T19:38:10 EDT" name="MainMenuValidationTest" finished-at="2025-04-04T19:38:21 EDT" duration-ms="10949">
+      <class name="tests.MainMenuValidation">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.MainMenuValidation@222a59e6]" started-at="2025-04-04T19:38:11 EDT" name="beforeMethod" finished-at="2025-04-04T19:38:17 EDT" duration-ms="6552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="LoginandLogout(java.util.HashMap)[pri:0, instance:tests.MainMenuValidation@222a59e6]" started-at="2025-04-04T19:38:17 EDT" name="LoginandLogout" data-provider="getUserCredentials" finished-at="2025-04-04T19:38:20 EDT" duration-ms="3017" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=secret_sauce, username=standard_user}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginandLogout -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:tests.MainMenuValidation@222a59e6]" started-at="2025-04-04T19:38:20 EDT" name="closeWindow" finished-at="2025-04-04T19:38:21 EDT" duration-ms="1078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+      </class> <!-- tests.MainMenuValidation -->
+    </test> <!-- MainMenuValidationTest -->
+    <test started-at="2025-04-04T19:38:10 EDT" name="CartPageValidationTest" finished-at="2025-04-04T19:38:23 EDT" duration-ms="12470">
+      <class name="tests.CartPageValidation">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.CartPageValidation@78fa769e]" started-at="2025-04-04T19:38:11 EDT" name="beforeMethod" finished-at="2025-04-04T19:38:19 EDT" duration-ms="8590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="addMultipleItemsAndVerifyInCart(java.util.HashMap)[pri:0, instance:tests.CartPageValidation@78fa769e]" started-at="2025-04-04T19:38:19 EDT" name="addMultipleItemsAndVerifyInCart" data-provider="getUserCredentials" finished-at="2025-04-04T19:38:22 EDT" duration-ms="2926" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=secret_sauce, username=standard_user}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addMultipleItemsAndVerifyInCart -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:tests.CartPageValidation@78fa769e]" started-at="2025-04-04T19:38:22 EDT" name="closeWindow" finished-at="2025-04-04T19:38:23 EDT" duration-ms="658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+      </class> <!-- tests.CartPageValidation -->
+    </test> <!-- CartPageValidationTest -->
+    <test started-at="2025-04-04T19:38:10 EDT" name="E2ETest" finished-at="2025-04-04T19:38:30 EDT" duration-ms="19943">
+      <class name="tests.E2ETest">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.E2ETest@7dfb0c0f]" started-at="2025-04-04T19:38:11 EDT" name="beforeMethod" finished-at="2025-04-04T19:38:18 EDT" duration-ms="7820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:tests.E2ETest@7dfb0c0f]" started-at="2025-04-04T19:38:18 EDT" name="submitOrder" data-provider="getData" finished-at="2025-04-04T19:38:22 EDT" duration-ms="3900" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=secret_sauce, product=Sauce Labs Onesie, username=standard_user}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:tests.E2ETest@7dfb0c0f]" started-at="2025-04-04T19:38:22 EDT" name="closeWindow" finished-at="2025-04-04T19:38:23 EDT" duration-ms="871" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.E2ETest@7dfb0c0f]" started-at="2025-04-04T19:38:23 EDT" name="beforeMethod" finished-at="2025-04-04T19:38:27 EDT" duration-ms="3785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:tests.E2ETest@7dfb0c0f]" started-at="2025-04-04T19:38:27 EDT" name="submitOrder" data-provider="getData" finished-at="2025-04-04T19:38:30 EDT" duration-ms="3010" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=secret_sauce, product=Sauce Labs Backpack, username=standard_user}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:tests.E2ETest@7dfb0c0f]" started-at="2025-04-04T19:38:30 EDT" name="closeWindow" finished-at="2025-04-04T19:38:30 EDT" duration-ms="254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+      </class> <!-- tests.E2ETest -->
+    </test> <!-- E2ETest -->
+    <test started-at="2025-04-04T19:38:10 EDT" name="ErrorvalidationTest" finished-at="2025-04-04T19:38:41 EDT" duration-ms="30702">
+      <class name="tests.Errorvalidation">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.Errorvalidation@68878f6d]" started-at="2025-04-04T19:38:10 EDT" name="beforeMethod" finished-at="2025-04-04T19:38:16 EDT" duration-ms="6033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="InvalidLogin()[pri:0, instance:tests.Errorvalidation@68878f6d]" started-at="2025-04-04T19:38:16 EDT" name="InvalidLogin" finished-at="2025-04-04T19:38:18 EDT" duration-ms="1672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidLogin -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:tests.Errorvalidation@68878f6d]" started-at="2025-04-04T19:38:18 EDT" name="closeWindow" finished-at="2025-04-04T19:38:20 EDT" duration-ms="1397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.Errorvalidation@68878f6d]" started-at="2025-04-04T19:38:20 EDT" name="beforeMethod" finished-at="2025-04-04T19:38:23 EDT" duration-ms="3704" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="checkoutWithMissingFirstName(java.util.HashMap)[pri:0, instance:tests.Errorvalidation@68878f6d]" started-at="2025-04-04T19:38:23 EDT" name="checkoutWithMissingFirstName" data-provider="getUserCredentials" finished-at="2025-04-04T19:38:26 EDT" duration-ms="2843" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=secret_sauce, username=standard_user}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutWithMissingFirstName -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:tests.Errorvalidation@68878f6d]" started-at="2025-04-04T19:38:26 EDT" name="closeWindow" finished-at="2025-04-04T19:38:27 EDT" duration-ms="478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.Errorvalidation@68878f6d]" started-at="2025-04-04T19:38:27 EDT" name="beforeMethod" finished-at="2025-04-04T19:38:31 EDT" duration-ms="3854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="lockedUser()[pri:0, instance:tests.Errorvalidation@68878f6d]" started-at="2025-04-04T19:38:31 EDT" name="lockedUser" finished-at="2025-04-04T19:38:31 EDT" duration-ms="436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lockedUser -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:tests.Errorvalidation@68878f6d]" started-at="2025-04-04T19:38:31 EDT" name="closeWindow" finished-at="2025-04-04T19:38:31 EDT" duration-ms="209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.Errorvalidation@68878f6d]" started-at="2025-04-04T19:38:31 EDT" name="beforeMethod" finished-at="2025-04-04T19:38:35 EDT" duration-ms="3445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="performanceGlitch()[pri:0, instance:tests.Errorvalidation@68878f6d]" started-at="2025-04-04T19:38:35 EDT" name="performanceGlitch" finished-at="2025-04-04T19:38:41 EDT" duration-ms="6060" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- performanceGlitch -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:tests.Errorvalidation@68878f6d]" started-at="2025-04-04T19:38:41 EDT" name="closeWindow" finished-at="2025-04-04T19:38:41 EDT" duration-ms="366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+      </class> <!-- tests.Errorvalidation -->
+    </test> <!-- ErrorvalidationTest -->
+    <test started-at="2025-04-04T19:38:10 EDT" name="InventoryPageValidationTest" finished-at="2025-04-04T19:38:59 EDT" duration-ms="48303">
+      <class name="tests.InventoryPageValidation">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.InventoryPageValidation@38af9828]" started-at="2025-04-04T19:38:11 EDT" name="beforeMethod" finished-at="2025-04-04T19:38:19 EDT" duration-ms="8091" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="VerifyItemCount(java.util.HashMap)[pri:0, instance:tests.InventoryPageValidation@38af9828]" started-at="2025-04-04T19:38:19 EDT" name="VerifyItemCount" data-provider="getUserCredentials" finished-at="2025-04-04T19:38:20 EDT" duration-ms="928" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=secret_sauce, username=standard_user}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyItemCount -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:tests.InventoryPageValidation@38af9828]" started-at="2025-04-04T19:38:20 EDT" name="closeWindow" finished-at="2025-04-04T19:38:21 EDT" duration-ms="1048" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.InventoryPageValidation@38af9828]" started-at="2025-04-04T19:38:21 EDT" name="beforeMethod" finished-at="2025-04-04T19:38:25 EDT" duration-ms="4216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="addSingleItemtoCart(java.util.HashMap)[pri:0, instance:tests.InventoryPageValidation@38af9828]" started-at="2025-04-04T19:38:25 EDT" name="addSingleItemtoCart" data-provider="getData" finished-at="2025-04-04T19:38:27 EDT" duration-ms="1557" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=secret_sauce, product=Sauce Labs Onesie, username=standard_user}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addSingleItemtoCart -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:tests.InventoryPageValidation@38af9828]" started-at="2025-04-04T19:38:27 EDT" name="closeWindow" finished-at="2025-04-04T19:38:27 EDT" duration-ms="492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.InventoryPageValidation@38af9828]" started-at="2025-04-04T19:38:27 EDT" name="beforeMethod" finished-at="2025-04-04T19:38:33 EDT" duration-ms="5574" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="addSingleItemtoCart(java.util.HashMap)[pri:0, instance:tests.InventoryPageValidation@38af9828]" started-at="2025-04-04T19:38:33 EDT" name="addSingleItemtoCart" data-provider="getData" finished-at="2025-04-04T19:38:33 EDT" duration-ms="868" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=secret_sauce, product=Sauce Labs Backpack, username=standard_user}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addSingleItemtoCart -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:tests.InventoryPageValidation@38af9828]" started-at="2025-04-04T19:38:33 EDT" name="closeWindow" finished-at="2025-04-04T19:38:34 EDT" duration-ms="162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.InventoryPageValidation@38af9828]" started-at="2025-04-04T19:38:34 EDT" name="beforeMethod" finished-at="2025-04-04T19:38:37 EDT" duration-ms="2905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="addandRemoveProductfromCart(java.util.HashMap)[pri:0, instance:tests.InventoryPageValidation@38af9828]" started-at="2025-04-04T19:38:37 EDT" name="addandRemoveProductfromCart" data-provider="getData" finished-at="2025-04-04T19:38:38 EDT" duration-ms="1745" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=secret_sauce, product=Sauce Labs Onesie, username=standard_user}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addandRemoveProductfromCart -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:tests.InventoryPageValidation@38af9828]" started-at="2025-04-04T19:38:38 EDT" name="closeWindow" finished-at="2025-04-04T19:38:39 EDT" duration-ms="316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.InventoryPageValidation@38af9828]" started-at="2025-04-04T19:38:39 EDT" name="beforeMethod" finished-at="2025-04-04T19:38:42 EDT" duration-ms="3562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="addandRemoveProductfromCart(java.util.HashMap)[pri:0, instance:tests.InventoryPageValidation@38af9828]" started-at="2025-04-04T19:38:42 EDT" name="addandRemoveProductfromCart" data-provider="getData" finished-at="2025-04-04T19:38:43 EDT" duration-ms="738" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=secret_sauce, product=Sauce Labs Backpack, username=standard_user}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addandRemoveProductfromCart -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:tests.InventoryPageValidation@38af9828]" started-at="2025-04-04T19:38:43 EDT" name="closeWindow" finished-at="2025-04-04T19:38:43 EDT" duration-ms="215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.InventoryPageValidation@38af9828]" started-at="2025-04-04T19:38:43 EDT" name="beforeMethod" finished-at="2025-04-04T19:38:46 EDT" duration-ms="3134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="sortProductsByHighToLowPrice(java.util.HashMap)[pri:0, instance:tests.InventoryPageValidation@38af9828]" started-at="2025-04-04T19:38:46 EDT" name="sortProductsByHighToLowPrice" data-provider="getUserCredentials" finished-at="2025-04-04T19:38:47 EDT" duration-ms="649" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=secret_sauce, username=standard_user}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortProductsByHighToLowPrice -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:tests.InventoryPageValidation@38af9828]" started-at="2025-04-04T19:38:47 EDT" name="closeWindow" finished-at="2025-04-04T19:38:47 EDT" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.InventoryPageValidation@38af9828]" started-at="2025-04-04T19:38:47 EDT" name="beforeMethod" finished-at="2025-04-04T19:38:50 EDT" duration-ms="3078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="sortProductsByLowToHighPrice(java.util.HashMap)[pri:0, instance:tests.InventoryPageValidation@38af9828]" started-at="2025-04-04T19:38:50 EDT" name="sortProductsByLowToHighPrice" data-provider="getUserCredentials" finished-at="2025-04-04T19:38:51 EDT" duration-ms="664" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=secret_sauce, username=standard_user}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortProductsByLowToHighPrice -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:tests.InventoryPageValidation@38af9828]" started-at="2025-04-04T19:38:51 EDT" name="closeWindow" finished-at="2025-04-04T19:38:51 EDT" duration-ms="184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.InventoryPageValidation@38af9828]" started-at="2025-04-04T19:38:51 EDT" name="beforeMethod" finished-at="2025-04-04T19:38:54 EDT" duration-ms="3119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyProductDetailsNavigation(java.util.HashMap)[pri:0, instance:tests.InventoryPageValidation@38af9828]" started-at="2025-04-04T19:38:54 EDT" name="verifyProductDetailsNavigation" data-provider="getData" finished-at="2025-04-04T19:38:55 EDT" duration-ms="559" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=secret_sauce, product=Sauce Labs Onesie, username=standard_user}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductDetailsNavigation -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:tests.InventoryPageValidation@38af9828]" started-at="2025-04-04T19:38:55 EDT" name="closeWindow" finished-at="2025-04-04T19:38:55 EDT" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.InventoryPageValidation@38af9828]" started-at="2025-04-04T19:38:55 EDT" name="beforeMethod" finished-at="2025-04-04T19:38:58 EDT" duration-ms="3049" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyProductDetailsNavigation(java.util.HashMap)[pri:0, instance:tests.InventoryPageValidation@38af9828]" started-at="2025-04-04T19:38:58 EDT" name="verifyProductDetailsNavigation" data-provider="getData" finished-at="2025-04-04T19:38:58 EDT" duration-ms="510" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=secret_sauce, product=Sauce Labs Backpack, username=standard_user}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductDetailsNavigation -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:tests.InventoryPageValidation@38af9828]" started-at="2025-04-04T19:38:58 EDT" name="closeWindow" finished-at="2025-04-04T19:38:59 EDT" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+      </class> <!-- tests.InventoryPageValidation -->
+    </test> <!-- InventoryPageValidationTest -->
+  </suite> <!-- Suite -->
+</testng-results>

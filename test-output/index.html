@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\rassh\SeleniumPractice\SeleniumRashePractice\FrameworkPractice\testNGxmlfiles\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">6 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">17 methods,   17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.Errorvalidation" class="method navigator-link" hash-for-method="InvalidLogin">InvalidLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.MainMenuValidation" class="method navigator-link" hash-for-method="LoginandLogout({password=secret_sauce, username=standard_user})">LoginandLogout({password=secret_sauce, username=standard_user})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.InventoryPageValidation" class="method navigator-link" hash-for-method="VerifyItemCount({password=secret_sauce, username=standard_user})">VerifyItemCount({password=secret_sauce, username=standard_user})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.CartPageValidation" class="method navigator-link" hash-for-method="addMultipleItemsAndVerifyInCart({password=secret_sauce, username=standard_user})">addMultipleItemsAndVerifyInCart({password=secret_sauce, username=standard_user})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.InventoryPageValidation" class="method navigator-link" hash-for-method="addSingleItemtoCart({password=secret_sauce, product=Sauce Labs Backpack, username=standard_user})">addSingleItemtoCart({password=secret_sauce, product=Sauce Labs Backpack, username=standard_user})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.InventoryPageValidation" class="method navigator-link" hash-for-method="addSingleItemtoCart({password=secret_sauce, product=Sauce Labs Onesie, username=standard_user})">addSingleItemtoCart({password=secret_sauce, product=Sauce Labs Onesie, username=standard_user})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.InventoryPageValidation" class="method navigator-link" hash-for-method="addandRemoveProductfromCart({password=secret_sauce, product=Sauce Labs Backpack, username=standard_user})">addandRemoveProductfromCart({password=secret_sauce, product=Sauce Labs Backpack, username=standard_user})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.InventoryPageValidation" class="method navigator-link" hash-for-method="addandRemoveProductfromCart({password=secret_sauce, product=Sauce Labs Onesie, username=standard_user})">addandRemoveProductfromCart({password=secret_sauce, product=Sauce Labs Onesie, username=standard_user})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.Errorvalidation" class="method navigator-link" hash-for-method="checkoutWithMissingFirstName({password=secret_sauce, username=standard_user})">checkoutWithMissingFirstName({password=secret_sauce, username=standard_user})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.Errorvalidation" class="method navigator-link" hash-for-method="lockedUser">lockedUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.Errorvalidation" class="method navigator-link" hash-for-method="performanceGlitch">performanceGlitch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.InventoryPageValidation" class="method navigator-link" hash-for-method="sortProductsByHighToLowPrice({password=secret_sauce, username=standard_user})">sortProductsByHighToLowPrice({password=secret_sauce, username=standard_user})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.InventoryPageValidation" class="method navigator-link" hash-for-method="sortProductsByLowToHighPrice({password=secret_sauce, username=standard_user})">sortProductsByLowToHighPrice({password=secret_sauce, username=standard_user})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.E2ETest" class="method navigator-link" hash-for-method="submitOrder({password=secret_sauce, product=Sauce Labs Onesie, username=standard_user})">submitOrder({password=secret_sauce, product=Sauce Labs Onesie, username=standard_user})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.E2ETest" class="method navigator-link" hash-for-method="submitOrder({password=secret_sauce, product=Sauce Labs Backpack, username=standard_user})">submitOrder({password=secret_sauce, product=Sauce Labs Backpack, username=standard_user})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.InventoryPageValidation" class="method navigator-link" hash-for-method="verifyProductDetailsNavigation({password=secret_sauce, product=Sauce Labs Backpack, username=standard_user})">verifyProductDetailsNavigation({password=secret_sauce, product=Sauce Labs Backpack, username=standard_user})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.InventoryPageValidation" class="method navigator-link" hash-for-method="verifyProductDetailsNavigation({password=secret_sauce, product=Sauce Labs Onesie, username=standard_user})">verifyProductDetailsNavigation({password=secret_sauce, product=Sauce Labs Onesie, username=standard_user})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.E2ETest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitOrder({password=secret_sauce, product=Sauce Labs Onesie, username=standard_user})">
+                  </a> <!-- submitOrder({password=secret_sauce, product=Sauce Labs Onesie, username=standard_user}) -->
+                  <span class="method-name">submitOrder</span>
+                  <span class="parameters">({password=secret_sauce, product=Sauce Labs Onesie, username=standard_user})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitOrder({password=secret_sauce, product=Sauce Labs Backpack, username=standard_user})">
+                  </a> <!-- submitOrder({password=secret_sauce, product=Sauce Labs Backpack, username=standard_user}) -->
+                  <span class="method-name">submitOrder</span>
+                  <span class="parameters">({password=secret_sauce, product=Sauce Labs Backpack, username=standard_user})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.CartPageValidation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addMultipleItemsAndVerifyInCart({password=secret_sauce, username=standard_user})">
+                  </a> <!-- addMultipleItemsAndVerifyInCart({password=secret_sauce, username=standard_user}) -->
+                  <span class="method-name">addMultipleItemsAndVerifyInCart</span>
+                  <span class="parameters">({password=secret_sauce, username=standard_user})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.Errorvalidation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="InvalidLogin">
+                  </a> <!-- InvalidLogin -->
+                  <span class="method-name">InvalidLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkoutWithMissingFirstName({password=secret_sauce, username=standard_user})">
+                  </a> <!-- checkoutWithMissingFirstName({password=secret_sauce, username=standard_user}) -->
+                  <span class="method-name">checkoutWithMissingFirstName</span>
+                  <span class="parameters">({password=secret_sauce, username=standard_user})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="lockedUser">
+                  </a> <!-- lockedUser -->
+                  <span class="method-name">lockedUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="performanceGlitch">
+                  </a> <!-- performanceGlitch -->
+                  <span class="method-name">performanceGlitch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.MainMenuValidation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginandLogout({password=secret_sauce, username=standard_user})">
+                  </a> <!-- LoginandLogout({password=secret_sauce, username=standard_user}) -->
+                  <span class="method-name">LoginandLogout</span>
+                  <span class="parameters">({password=secret_sauce, username=standard_user})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.InventoryPageValidation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyItemCount({password=secret_sauce, username=standard_user})">
+                  </a> <!-- VerifyItemCount({password=secret_sauce, username=standard_user}) -->
+                  <span class="method-name">VerifyItemCount</span>
+                  <span class="parameters">({password=secret_sauce, username=standard_user})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addSingleItemtoCart({password=secret_sauce, product=Sauce Labs Backpack, username=standard_user})">
+                  </a> <!-- addSingleItemtoCart({password=secret_sauce, product=Sauce Labs Backpack, username=standard_user}) -->
+                  <span class="method-name">addSingleItemtoCart</span>
+                  <span class="parameters">({password=secret_sauce, product=Sauce Labs Backpack, username=standard_user})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addSingleItemtoCart({password=secret_sauce, product=Sauce Labs Onesie, username=standard_user})">
+                  </a> <!-- addSingleItemtoCart({password=secret_sauce, product=Sauce Labs Onesie, username=standard_user}) -->
+                  <span class="method-name">addSingleItemtoCart</span>
+                  <span class="parameters">({password=secret_sauce, product=Sauce Labs Onesie, username=standard_user})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addandRemoveProductfromCart({password=secret_sauce, product=Sauce Labs Backpack, username=standard_user})">
+                  </a> <!-- addandRemoveProductfromCart({password=secret_sauce, product=Sauce Labs Backpack, username=standard_user}) -->
+                  <span class="method-name">addandRemoveProductfromCart</span>
+                  <span class="parameters">({password=secret_sauce, product=Sauce Labs Backpack, username=standard_user})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addandRemoveProductfromCart({password=secret_sauce, product=Sauce Labs Onesie, username=standard_user})">
+                  </a> <!-- addandRemoveProductfromCart({password=secret_sauce, product=Sauce Labs Onesie, username=standard_user}) -->
+                  <span class="method-name">addandRemoveProductfromCart</span>
+                  <span class="parameters">({password=secret_sauce, product=Sauce Labs Onesie, username=standard_user})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sortProductsByHighToLowPrice({password=secret_sauce, username=standard_user})">
+                  </a> <!-- sortProductsByHighToLowPrice({password=secret_sauce, username=standard_user}) -->
+                  <span class="method-name">sortProductsByHighToLowPrice</span>
+                  <span class="parameters">({password=secret_sauce, username=standard_user})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sortProductsByLowToHighPrice({password=secret_sauce, username=standard_user})">
+                  </a> <!-- sortProductsByLowToHighPrice({password=secret_sauce, username=standard_user}) -->
+                  <span class="method-name">sortProductsByLowToHighPrice</span>
+                  <span class="parameters">({password=secret_sauce, username=standard_user})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductDetailsNavigation({password=secret_sauce, product=Sauce Labs Backpack, username=standard_user})">
+                  </a> <!-- verifyProductDetailsNavigation({password=secret_sauce, product=Sauce Labs Backpack, username=standard_user}) -->
+                  <span class="method-name">verifyProductDetailsNavigation</span>
+                  <span class="parameters">({password=secret_sauce, product=Sauce Labs Backpack, username=standard_user})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductDetailsNavigation({password=secret_sauce, product=Sauce Labs Onesie, username=standard_user})">
+                  </a> <!-- verifyProductDetailsNavigation({password=secret_sauce, product=Sauce Labs Onesie, username=standard_user}) -->
+                  <span class="method-name">verifyProductDetailsNavigation</span>
+                  <span class="parameters">({password=secret_sauce, product=Sauce Labs Onesie, username=standard_user})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\rassh\SeleniumPractice\SeleniumRashePractice\FrameworkPractice\testNGxmlfiles\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;abstractTest.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;E2ETest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.E2ETest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- E2ETest --&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;ErrorvalidationTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.Errorvalidation&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ErrorvalidationTest --&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;CartPageValidationTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.CartPageValidation&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CartPageValidationTest --&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;InventoryPageValidationTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.InventoryPageValidation&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- InventoryPageValidationTest --&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;MainMenuValidationTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.MainMenuValidation&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- MainMenuValidationTest --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;TestNGTestRunner&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;cucumber.TestNGTestRunner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestNGTestRunner --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">E2ETest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ErrorvalidationTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">CartPageValidationTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">InventoryPageValidationTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">MainMenuValidationTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">TestNGTestRunner (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">E2ETest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">submitOrder</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Errorhandling</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">InvalidLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkoutWithMissingFirstName</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">lockedUser</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">performanceGlitch</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(17);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'performanceGlitch')
+data.setCell(0, 2, 'tests.Errorvalidation')
+data.setCell(0, 3, 6060);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'submitOrder')
+data.setCell(1, 2, 'tests.E2ETest')
+data.setCell(1, 3, 3900);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'LoginandLogout')
+data.setCell(2, 2, 'tests.MainMenuValidation')
+data.setCell(2, 3, 3017);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'submitOrder')
+data.setCell(3, 2, 'tests.E2ETest')
+data.setCell(3, 3, 3010);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'addMultipleItemsAndVerifyInCart')
+data.setCell(4, 2, 'tests.CartPageValidation')
+data.setCell(4, 3, 2926);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'checkoutWithMissingFirstName')
+data.setCell(5, 2, 'tests.Errorvalidation')
+data.setCell(5, 3, 2843);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'addandRemoveProductfromCart')
+data.setCell(6, 2, 'tests.InventoryPageValidation')
+data.setCell(6, 3, 1745);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'InvalidLogin')
+data.setCell(7, 2, 'tests.Errorvalidation')
+data.setCell(7, 3, 1672);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'addSingleItemtoCart')
+data.setCell(8, 2, 'tests.InventoryPageValidation')
+data.setCell(8, 3, 1557);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'VerifyItemCount')
+data.setCell(9, 2, 'tests.InventoryPageValidation')
+data.setCell(9, 3, 928);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'addSingleItemtoCart')
+data.setCell(10, 2, 'tests.InventoryPageValidation')
+data.setCell(10, 3, 868);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'addandRemoveProductfromCart')
+data.setCell(11, 2, 'tests.InventoryPageValidation')
+data.setCell(11, 3, 738);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'sortProductsByLowToHighPrice')
+data.setCell(12, 2, 'tests.InventoryPageValidation')
+data.setCell(12, 3, 664);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'sortProductsByHighToLowPrice')
+data.setCell(13, 2, 'tests.InventoryPageValidation')
+data.setCell(13, 3, 649);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyProductDetailsNavigation')
+data.setCell(14, 2, 'tests.InventoryPageValidation')
+data.setCell(14, 3, 559);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyProductDetailsNavigation')
+data.setCell(15, 2, 'tests.InventoryPageValidation')
+data.setCell(15, 3, 510);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'lockedUser')
+data.setCell(16, 2, 'tests.Errorvalidation')
+data.setCell(16, 3, 436);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 48 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Errorvalidation</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.E2ETest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">222 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.InventoryPageValidation</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">222 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CartPageValidation</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">223 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.MainMenuValidation</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">223 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Errorvalidation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">InvalidLogin</span>
+                <span class="method-start">6037 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.MainMenuValidation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">LoginandLogout({password=secret_sauce, username=standard_user})</span>
+                <span class="method-start">6776 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Errorvalidation</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeWindow</span>
+                <span class="method-start">7721 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.E2ETest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">submitOrder({password=secret_sauce, product=Sauce Labs Onesie, username=standard_user})</span>
+                <span class="method-start">8042 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.InventoryPageValidation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyItemCount({password=secret_sauce, username=standard_user})</span>
+                <span class="method-start">8313 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CartPageValidation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addMultipleItemsAndVerifyInCart({password=secret_sauce, username=standard_user})</span>
+                <span class="method-start">8813 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Errorvalidation</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">9227 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.InventoryPageValidation</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeWindow</span>
+                <span class="method-start">9269 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.MainMenuValidation</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeWindow</span>
+                <span class="method-start">9800 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.InventoryPageValidation</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">10330 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CartPageValidation</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeWindow</span>
+                <span class="method-start">11745 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.E2ETest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeWindow</span>
+                <span class="method-start">11953 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">cucumber.TestNGTestRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@68034211)</span>
+                <span class="method-start">12260 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.E2ETest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">12825 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Errorvalidation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkoutWithMissingFirstName({password=secret_sauce, username=standard_user})</span>
+                <span class="method-start">12931 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.InventoryPageValidation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addSingleItemtoCart({password=secret_sauce, product=Sauce Labs Onesie, username=standard_user})</span>
+                <span class="method-start">14547 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Errorvalidation</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeWindow</span>
+                <span class="method-start">15776 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.InventoryPageValidation</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeWindow</span>
+                <span class="method-start">16106 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Errorvalidation</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">16256 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.InventoryPageValidation</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">16598 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.E2ETest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">submitOrder({password=secret_sauce, product=Sauce Labs Backpack, username=standard_user})</span>
+                <span class="method-start">16611 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">cucumber.TestNGTestRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">18303 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.E2ETest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeWindow</span>
+                <span class="method-start">19624 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Errorvalidation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">lockedUser</span>
+                <span class="method-start">20110 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeWindow</span>
+                <span class="method-start">20550 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">20762 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.InventoryPageValidation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addSingleItemtoCart({password=secret_sauce, product=Sauce Labs Backpack, username=standard_user})</span>
+                <span class="method-start">22172 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeWindow</span>
+                <span class="method-start">23040 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">23212 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Errorvalidation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">performanceGlitch</span>
+                <span class="method-start">24207 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.InventoryPageValidation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addandRemoveProductfromCart({password=secret_sauce, product=Sauce Labs Onesie, username=standard_user})</span>
+                <span class="method-start">26117 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeWindow</span>
+                <span class="method-start">27864 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">28181 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Errorvalidation</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeWindow</span>
+                <span class="method-start">30269 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.InventoryPageValidation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addandRemoveProductfromCart({password=secret_sauce, product=Sauce Labs Backpack, username=standard_user})</span>
+                <span class="method-start">31743 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeWindow</span>
+                <span class="method-start">32481 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">32702 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">sortProductsByHighToLowPrice({password=secret_sauce, username=standard_user})</span>
+                <span class="method-start">35836 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeWindow</span>
+                <span class="method-start">36485 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">36661 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">sortProductsByLowToHighPrice({password=secret_sauce, username=standard_user})</span>
+                <span class="method-start">39739 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeWindow</span>
+                <span class="method-start">40403 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">40592 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProductDetailsNavigation({password=secret_sauce, product=Sauce Labs Onesie, username=standard_user})</span>
+                <span class="method-start">43711 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeWindow</span>
+                <span class="method-start">44274 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">44476 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProductDetailsNavigation({password=secret_sauce, product=Sauce Labs Backpack, username=standard_user})</span>
+                <span class="method-start">47525 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeWindow</span>
+                <span class="method-start">48044 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

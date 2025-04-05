@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite parallel="tests" name="Suite">
+
+  <groups>
+    <run>
+      <include name="Errorhandling"/>
+    </run> 
+  </groups>  
+  
+  <listeners>
+    <listener class-name="abstractTest.Listeners"/>
+  </listeners>
+  
+  <!-- Test for E2ETest -->
+  <test thread-count="1" name="E2ETest">
+    <classes>
+      <class name="tests.E2ETest"/> 
+    </classes>
+  </test> <!-- E2ETest Test -->
+  
+  <!-- Test for ErrorvalidationTest -->
+  <test thread-count="1" name="ErrorvalidationTest">
+    <classes>
+      <class name="tests.Errorvalidation"/> 
+    </classes>
+  </test> <!-- ErrorvalidationTest -->
+  
+  <!-- Test for CartPageValidationTest -->
+  <test thread-count="1" name="CartPageValidationTest">
+    <classes>
+      <class name="tests.CartPageValidation"/> 
+    </classes>
+  </test> <!-- CartPageValidationTest -->
+  
+  <!-- Test for InventoryPageValidationTest -->
+  <test thread-count="1" name="InventoryPageValidationTest">
+    <classes>
+      <class name="tests.InventoryPageValidation"/> 
+    </classes>
+  </test> <!-- InventoryPageValidationTest -->
+  
+  <!-- Test for MainMenuValidationTest -->
+  <test thread-count="1" name="MainMenuValidationTest">
+    <classes>
+      <class name="tests.MainMenuValidation"/> 
+    </classes>
+  </test> <!-- MainMenuValidationTest -->
+  
+</suite> <!-- Suite -->
+
+
