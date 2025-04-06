@@ -1,26 +1,32 @@
-
-
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>SeleniumJavaFranework</groupId>
+  <groupId>SeleniumJavaFramework</groupId>
   <artifactId>FrameworkPractice</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-
   <name>FrameworkPractice</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+ 
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
   </properties>
 
  <dependencies>
+	 
+	 <dependency>
+  <groupId>org.projectlombok</groupId>
+  <artifactId>lombok</artifactId>
+  <version>1.18.30</version>
+  <scope>provided</scope>
+</dependency>
+
+	 
    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
   <dependency>
+	  
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
    <version>4.8.3</version>
@@ -80,75 +86,23 @@
  </dependencies>
  
  
-  
-  <profiles>
-  
-  <profile>
-  <id>E2ESuite</id>
-   <build>
-       <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
-     <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0-M7</version>
-        <configuration>
-          <suiteXmlFiles>
-            <suiteXmlFile>testNGxmlfiles/E2ETest.xml</suiteXmlFile>
-          </suiteXmlFiles>
-        </configuration>
-      </plugin>
-   </plugins>
-  </pluginManagement>
-   </build>
- </profile>
  
-  <profile>
-  <id>ErrorValidation</id>
    <build>
-       <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
-     <plugins>
-      <plugin>
+        <plugins>
+       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.0.0-M7</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>testNGxmlfiles/grouping.xml</suiteXmlFile>
+            <suiteXmlFile>testNGxmlfiles/testng.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
+
    </plugins>
-  </pluginManagement>
-   </build>
- </profile>
 
-
-<profile>
-  <id>CucumberTests</id>
-   <build>
-       <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
-     <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0-M7</version>
-        <configuration>
-          <includes>
-			  <include>**/TestNGTestRunner.java</include>
-		  </includes>
-        </configuration>
-      </plugin>
-   </plugins>
-  </pluginManagement>
-   </build>
- </profile>
-</profiles>
-
-
-
-
-  <build>
+ 
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
@@ -162,10 +116,17 @@
           <artifactId>maven-resources-plugin</artifactId>
           <version>3.0.2</version>
         </plugin>
-        <plugin>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.8.0</version>
-        </plugin>
+      
+      
+<plugin>
+  <artifactId>maven-compiler-plugin</artifactId>
+  <version>3.11.0</version>
+  <configuration>
+    <release>17</release>
+  </configuration>
+</plugin>
+
+
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.22.1</version>

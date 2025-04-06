@@ -1,45 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Suite">
-	<listeners>
-		<listener class-name="abstractTest.Listeners"/>
-	</listeners>
-  
-   <test thread-count="1" name="E2ETest">
+<suite name="AllTests">
+  <test name="AllTestsSuite">
+    <packages>
+      <package name="tests" /> <!-- This includes all tests in that package -->
+    </packages>
     <classes>
-      <class name="tests.E2ETest"/> 
-    </classes>
-  </test> <!-- Test -->
-  
-  <test thread-count="1" name="ErrorvalidationTest">
-    <classes>
-      <class name="tests.Errorvalidation"/> 
-    </classes>
+    <class name="tests.CartPageValidation" />
+    <class name="tests.E2ETest" />
+    <class name="tests.Errorvalidation" />
+    <class name="tests.InventoryPageValidation" />
+    <class name="tests.MainMenuValidation" />
+  </classes>
   </test>
-  
-    <test thread-count="1" name="CartPageValidationTest">
-    <classes>
-      <class name="tests.CartPageValidation"/> 
-    </classes>
-  </test>
-    <test thread-count="1" name="InventoryPageValidationTest">
-    <classes>
-      <class name="tests.InventoryPageValidation"/> 
-    </classes>
-  </test>
-    <test thread-count="1" name="MainMenuValidationTest">
-    <classes>
-      <class name="tests.MainMenuValidation"/> 
-    </classes>
-  </test>
-  
-  <test thread-count="1" name="TestNGTestRunner">
-    <classes>
-      <class name="cucumber.TestNGTestRunner"/> 
-    </classes>
-  </test>
-  
-  
-  
-</suite> <!-- Suite -->
-
+</suite>
